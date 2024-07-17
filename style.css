@@ -1,44 +1,35 @@
-#{
-    margin: 0%;
-    padding: 0%;
+*{
+    margin: 0;
+    padding: 0;
 }
 body{
-    font-family: "Poppins", sans-serif;;
+    font-family: poppins sans-serif;
 }
 .container{
     margin: 0 auto;
-    max-width: 1440px;
+    max-width: 1440px
 }
-/* .header-area-start */
+/* Header Area Start */
 .header-area-start{
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
 }
 .header-area-menu ul{
     display: flex;
-
 }
 .header-area-menu ul li{
     list-style: none;
-    margin-right: 20px;
+    margin-right: 30px;
+}
+.header-area-menu ul li a{
+    text-decoration: none; margin-right: 30px;
 }
 .header-area-menu ul li a{
     text-decoration: none;
 }
-/* header area end */
-/* banner area :start */
+/* Header Area End */
 
-.banner-img{
-    background-image: url("image/banner/banner.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 1440px;
-    height: 616px;
-    top: 123px;
-    gap: 0px;
-    opacity: 0px;
-}
 /* About the principal start */
 .about-the-principal{
     display: flex;
@@ -64,19 +55,41 @@ body{
 /* About the principal end */
     
 
-
-/* form start */
-#form{
-    display:flex ;
-    padding-top: 40px;
-    margin-left:0 auto ;
-    background-color:lightskyblue ;
+/* Bannar area start */
+.background-img{
+    background-image:url("image/banner/banner.png");
+    height: 616PX;
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+.background-text-area{
+    text-align: center;
+    width: 1440px;
+    height: 616px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 50px;
+    color: ivory;
 }
+.background-text-area-btn button{
+    width: 338px;
+    height: 58px;
+    font-size: 80px;
+    text-align: center;
+} 
+/* Bannar area end */
 
+/* Form start */
+
+#form{
+    display: flex;
+    padding-top: 40px;
+    margin-left: 0 auto;
+    background-color: rgb(135, 212, 250);
+}
 .form-input input{
-    height: 60px;
-    width: 90% ;
-    background-color:lightgrey ;
+    height: 70px;
+    width: 90%;  background-color: lightgrey;
     border: radius 15%;
 }
 .form-input button{
@@ -84,13 +97,14 @@ body{
     height: 70px;
     text-align: center;
     margin-left: 40px;
-    background-color: rgb(0, 100, 25);
+    background-color: darkgreen;
 }
 .form-text{
     font-size: 20px;
     margin-top:40px;
 }
 /* Form end */
+
 /* Service start  */
 .services-image{
     display: flex;
@@ -162,4 +176,5 @@ body{
     font-size: 90px;
     font-weight: bold;
     text-align: center;
+ background-color: lightgrey;
 }
